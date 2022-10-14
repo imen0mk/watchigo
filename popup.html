@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title> subscribe</title>
+      <link rel="stylesheet" href="hoh.css">
+     
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <body>
+    <body>
+        <div class="start-btn">
+           <a href=#>sign up</a>
+        </div>
+        <div class="center modal-box">
+           <div class="fas fa-times"></div>
+           <div class="fas fa-envelope icon1"></div>
+           <header>Sign up to start your free trial!</header>
+         
+          <h2>Create your account</h2>
+           <form action="">
+              <div class="fas fa-envelope icon2"></div>
+              <input type="email" required placeholder="abc@example.com">
+              <input type="password" required placeholder="password">
+              <a href="index.html">
+               subscribe
+             </a>
+           </form>
+           
+        </div>
+        <script>
+           $(document).ready(function(){
+             $('.start-btn').click(function(){
+               $('.modal-box').toggleClass("show-modal");
+               $('.start-btn').toggleClass("show-modal");
+             });
+             $('.fa-times').click(function(){
+               $('.modal-box').toggleClass("show-modal");
+               $('.start-btn').toggleClass("show-modal");
+             });
+           });
+        </script>
+      
+      </body>
+      </html>
+    
